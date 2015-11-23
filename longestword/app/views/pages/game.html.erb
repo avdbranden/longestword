@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row text-center">
+    <h1>******** Welcome to the longest word-game !********</h1>
+    <p>Here is your grid :</p>
+    <p><%=@grid.join(" ") %></p>
+    <p>"*****************************************************"</p>
+
+    <h2>What's your best shot ?</h2>
+      <form action="/score">
+        <input type="text" placeholder="My best shot is...">
+        <button type="submit" class="btn btn-success">Go!</button>
+      </form>
+  </div>
+</div>
+
+<!-- start_time = Time.now
+attempt = gets.chomp
+end_time = Time.now
+
+puts "******** Now your result ********"
+
+result = run_game(attempt, grid, start_time, end_time)
+
+puts "Your word: #{attempt}"
+puts "Time Taken to answer: #{result[:time]}"
+puts "Translation: #{result[:translation]}"
+puts "Your score: #{result[:score]}"
+puts "Message: #{result[:message]}"
+
+puts "*****************************************************" --> -->
