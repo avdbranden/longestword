@@ -1,2 +1,15 @@
 <h1>Pages#score</h1>
-<p>Find me in app/views/pages/score.html.erb</p>
+<p><%= @shot %></p>
+
+<p><%= @end_time %></p>
+<p><%= @start_time %></p>
+<p><%= @final_time %></p>
+
+<div class="container">
+  <div class="row text-center">
+    <h1>Your score is <%= @score %></h1>
+</div>
+
+<p><%= @result[:score] %></p>
+<p><%= @result[:final_time] %></p>
+<p><%= @result[:grid] %></p>
