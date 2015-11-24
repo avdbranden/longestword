@@ -2,16 +2,19 @@
   <div class="row text-center">
     <h1>******** Welcome to the longest word-game !********</h1>
     <p>Here is your grid :</p>
-    <p><%=@grid.join(" ") %></p>
+    <p><%= @grid.join(" ") %></p>
+
     <p>"*****************************************************"</p>
 
     <h2>What's your best shot ?</h2>
-      <form action="/score">
-        <input type="text" placeholder="My best shot is..." name="shot">
-        <input type="hidden" name="start_time" value="<%= Time.now.to_i %>">
-        <input type="hidden" name="grid" value="<%= @grid.join(" ") %>">
-        <button type="submit" class="btn btn-success">Go!</button>
-      </form>
+    <form action="/score">
+      <label for="my best shot">My best shot</label>
+      <input type="text" name="attempt">
+      <input type="hidden" name="grid" value="<%= @grid %>">
+      <input type="hidden" name="start" value="<%= @start %>">
+      <input type="submit" value="Go!">
+    </form>
+
   </div>
 </div>
 

@@ -1,15 +1,14 @@
-<h1>Pages#score</h1>
-<p><%= @shot %></p>
-
-<p><%= @end_time %></p>
-<p><%= @start_time %></p>
-<p><%= @final_time %></p>
 
 <div class="container">
-  <div class="row text-center">
-    <h1>Your score is <%= @score %></h1>
+  <div class="row">
+  <h1>Pages#score</h1>
+  <ul>
+    <li>Your time is <%= @result[:time] %> seconds!</li>
+    <li>Meaning is: <%= @result[:translation] %>.</li>
+    <li>Your score is: <strong><%= @result[:score] %> seconds</strong>!</li>
+    <li><%= @result[:message] %></li>
+  </ul>
+  </div>
 </div>
 
-<p><%= @result[:score] %></p>
-<p><%= @result[:final_time] %></p>
-<p><%= @result[:grid] %></p>
+
